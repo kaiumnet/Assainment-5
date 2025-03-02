@@ -13,7 +13,7 @@ document.getElementById('back-btn')?.addEventListener('click', function (event) 
 const buttons = document.querySelectorAll('.complete-btn');
 const digits = document.getElementById('random');
 
-let digit = 7;
+let digit = 6;
 
 buttons.forEach(function (random) {
   random.addEventListener('click', function () {
@@ -38,6 +38,7 @@ let number = 24;
 
 buttons.forEach(function (button) {
   button.addEventListener('click', function () {
+    alert('Board updated successfully!');
     number++;
     numbers.textContent = number;
 
@@ -66,6 +67,26 @@ document.getElementById('color').addEventListener('click', function() {
     currentColor = (currentColor + 1) % colors.length;
 });
 
+
+
+
+//current date
+window.onload = function() {
+
+const dateNew = document.getElementById('current-date');
+const currentDate = new Date();
+
+const days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+const months= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+const day = days[currentDate.getDay()];
+const month = months[currentDate.getMonth()];
+const date = currentDate.getDate();
+const year = currentDate.getFullYear();
+
+dateNew.innerHTML = `${day},<br><span class="font-bold">${month} ${date} ${year}</span>`;
+};
 
 
 
