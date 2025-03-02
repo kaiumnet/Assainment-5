@@ -20,30 +20,49 @@
         </div>
 
         <div class="flex items-center">
-          <button id="back-btn" class="bg-blue-600 py-2 px-3 rounded-lg text-white font-bold cursor-pointer">Back to Desk</button>
+          <button id="back-btn" class="bg-blue-600 py-2 px-3 rounded-lg text-white font-bold cursor-pointer">Back to
+            Desk</button>
         </div>
       </nav>
     </section>
 
     <section class="grid-rows-6 mt-10">
       <div class="bg-white p-4 rounded-lg mb-4">
-        Question-1: What are the different ways to select an element in the DOM?
+        <h3>Question-1: What are the different ways to select an element in the DOM?</h3>
+        <p class="mt-4">There area 5 way to select an element in the DOM</p>
+        <ol class="list-decimal ml-10 mt-4">
+          <li>getElementsByTagName()</li>
+          <li>getElementsByClassName()</li>
+          <li>getElementById()</li>
+          <li>querySelector()</li>
+          <li>querySelectorAll()</li>
+        </ol>
       </div>
 
       <div class="bg-white p-4 rounded-lg mb-4">
-        Question-2: What is the difference between innerHTML, innerText, and textContent ?
+        <h3>Question-2: What is the difference between innerHTML, innerText, and textContent?</h3>
+        <p class="mt-4">
+          <span class="font-bold mt-4">InnerHTML:</span> HTML tags shoh pabar jonno eta use hoy. <br>
+          <span class="font-bold mt-4">InnerText:</span> HTML tags chara, and CSS styling display: none kore eta use hoy. <br>
+          <span class="font-bold mt-4">TextContent:</span> HTML tags chara baki hidden elements gulu pete eta kaj kore.
+        </p>
       </div>
 
       <div class="bg-white p-4 rounded-lg mb-4">
-        Question-3: What is event delegation in the DOM?
+        <h3>Question-3: What is event delegation in the DOM?</h3>
+        <p class="mt-4">Event delegation in the DOM (Document Object Model) is a technique where instead of attaching event listeners to individual child elements, you attach the event listener to a parent element and take advantage of the event bubbling mechanism to handle events on child elements</p>
       </div>
 
       <div class="bg-white p-4 rounded-lg mb-4">
-        Question-4: What is event bubbling in the DOM?
+        <h3>Question-4: What is event bubbling in the DOM?</h3>
       </div>
 
       <div class="bg-white p-4 rounded-lg mb-4">
-        Question-5: How do you create, add, and remove elements using JavaScript?
+        <h3>Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+        <p>To create an element: document.createElement() <br>
+           To create an element: appendChild() <br>
+           To remove an element: removeChild() <br>
+        </p>
       </div>
     </section>
   </section>
